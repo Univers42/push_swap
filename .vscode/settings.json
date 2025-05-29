@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "push_swap.h": "c",
+        "libft.h": "c",
+        "ft_ctype.h": "c"
+    }
+}

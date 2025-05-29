@@ -6,14 +6,14 @@
 /*   By: dlesieur <dlesieur@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 12:38:14 by dlesieur          #+#    #+#             */
-/*   Updated: 2025/05/28 17:47:15 by dlesieur         ###   ########.fr       */
+/*   Updated: 2025/05/29 15:02:37 by dlesieur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
 /**
- * Generic push function that moves the top element from source to destination
+ * Generic push function that voids the top element from source to destination
  * @param source Pointer to the source stack head
  * @param dest Pointer to the destination stack head  
  * @param size_src Pointer to source stack size
@@ -26,7 +26,7 @@ static void push(t_list **source, t_list **dest, int *size_src, int *size_dest)
     if (!*source || *size_src == 0)
         return;
     
-    // Remove from source
+    // Revoid from source
     temp = *source;
     *source = (*source)->next;
     if (*source)
